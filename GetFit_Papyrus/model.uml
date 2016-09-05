@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_n5jh4HLmEeaMzZlCtb-EfQ" name="RootElement">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vAw1IHLmEeaMzZlCtb-EfQ" name="User"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DOWIwHLnEeaMzZlCtb-EfQ" name="select from touch screen display">
+    <include xmi:type="uml:Include" xmi:id="_6vcNUHLnEeaMzZlCtb-EfQ" addition="_JljicHLnEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GuywsHLnEeaMzZlCtb-EfQ" name="generate workout schedule">
+    <include xmi:type="uml:Include" xmi:id="_LoHaoHLoEeaMzZlCtb-EfQ" addition="_ZUguoHLnEeaMzZlCtb-EfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_M6DjoHLoEeaMzZlCtb-EfQ" addition="_XcsRYHLnEeaMzZlCtb-EfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_N8uhkHLoEeaMzZlCtb-EfQ" addition="_L1eWoHLnEeaMzZlCtb-EfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_PspnEHLoEeaMzZlCtb-EfQ" addition="_bAwOAHLnEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_JljicHLnEeaMzZlCtb-EfQ" name="display workout schedule">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_3tthsHLnEeaMzZlCtb-EfQ" name=""/>
+    <include xmi:type="uml:Include" xmi:id="_I6WM0HLoEeaMzZlCtb-EfQ" addition="_GuywsHLnEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_L1eWoHLnEeaMzZlCtb-EfQ" name="access calendar" isAbstract="true"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XcsRYHLnEeaMzZlCtb-EfQ" name="access weather information" isAbstract="true"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZUguoHLnEeaMzZlCtb-EfQ" name="get phone location"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bAwOAHLnEeaMzZlCtb-EfQ" name="access user preferences"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Rts40HLoEeaMzZlCtb-EfQ" client="_vAw1IHLmEeaMzZlCtb-EfQ" supplier="_JljicHLnEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_MKA74HLqEeaMzZlCtb-EfQ" name="access google calendar"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_NrLMoHLqEeaMzZlCtb-EfQ" name="access phone calendar"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_SZG7YHLqEeaMzZlCtb-EfQ" client="_L1eWoHLnEeaMzZlCtb-EfQ" supplier="_MKA74HLqEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_Tuc9sHLqEeaMzZlCtb-EfQ" client="_L1eWoHLnEeaMzZlCtb-EfQ" supplier="_NrLMoHLqEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XbOKYHLqEeaMzZlCtb-EfQ" name="access Yahoo weather API"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_evqBUHLqEeaMzZlCtb-EfQ" name="access weather underground api"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_jfaVAHLqEeaMzZlCtb-EfQ" client="_XcsRYHLnEeaMzZlCtb-EfQ" supplier="_XbOKYHLqEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_knGV0HLqEeaMzZlCtb-EfQ" client="_XcsRYHLnEeaMzZlCtb-EfQ" supplier="_evqBUHLqEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LWLOsHLrEeaMzZlCtb-EfQ" name="update preferences or information">
+    <include xmi:type="uml:Include" xmi:id="_SYjFQHLrEeaMzZlCtb-EfQ" addition="_GuywsHLnEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_QaIQwHLrEeaMzZlCtb-EfQ" client="_vAw1IHLmEeaMzZlCtb-EfQ" supplier="_LWLOsHLrEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WE7a8HLsEeaMzZlCtb-EfQ" name="Phone"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZEpUYHLsEeaMzZlCtb-EfQ" name="background refresh">
+    <include xmi:type="uml:Include" xmi:id="_i19dcHLsEeaMzZlCtb-EfQ" addition="_GuywsHLnEeaMzZlCtb-EfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_nhCsgHLsEeaMzZlCtb-EfQ" addition="_kQs9IHLsEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_eIgP0HLsEeaMzZlCtb-EfQ" client="_WE7a8HLsEeaMzZlCtb-EfQ" supplier="_ZEpUYHLsEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kQs9IHLsEeaMzZlCtb-EfQ" name="send notification"/>
+</uml:Model>
