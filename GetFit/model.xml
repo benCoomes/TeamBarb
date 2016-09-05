@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="GetFit">
+				<description>
+					
+				</description>
+				<alt name="Access_Weather_Information">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="Weather-Underground">
+						<description>
+							
+						</description>
+					</feature>
+					<feature mandatory="true" name="Yahoo_Weather">
+						<description>
+							
+						</description>
+					</feature>
+				</alt>
+				<feature name="Suggest_Workout_Location">
+					<description>
+						
+					</description>
+				</feature>
+				<feature name="Suggest_Workout_Type">
+					<description>
+						
+					</description>
+				</feature>
+				<alt mandatory="true" name="Suggest_Workout_Times">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="Google_Calendar">
+						<description>
+							
+						</description>
+					</feature>
+					<feature mandatory="true" name="Phone_Calendar">
+						<description>
+							
+						</description>
+					</feature>
+				</alt>
+				<and name="Post_To_Social_Media">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="Facebook">
+						<description>
+							
+						</description>
+					</feature>
+					<feature name="Twitter">
+						<description>
+							
+						</description>
+					</feature>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
