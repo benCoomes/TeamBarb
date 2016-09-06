@@ -38,4 +38,41 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_eIgP0HLsEeaMzZlCtb-EfQ" client="_WE7a8HLsEeaMzZlCtb-EfQ" supplier="_ZEpUYHLsEeaMzZlCtb-EfQ"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_kQs9IHLsEeaMzZlCtb-EfQ" name="send notification"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_RgcGwHPWEeaMzZlCtb-EfQ" name="User"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qPrnsHPWEeaMzZlCtb-EfQ" name="update preferences or information">
+    <include xmi:type="uml:Include" xmi:id="_MErMMHPXEeaMzZlCtb-EfQ" addition="_0CeXcHPWEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_tJUHQHPWEeaMzZlCtb-EfQ" name="display workout schedule">
+    <include xmi:type="uml:Include" xmi:id="_KX2eAHPXEeaMzZlCtb-EfQ" addition="_0CeXcHPWEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vUaF0HPWEeaMzZlCtb-EfQ" name="select from touch screen display">
+    <include xmi:type="uml:Include" xmi:id="_IF-iAHPXEeaMzZlCtb-EfQ" addition="_tJUHQHPWEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_xCJaAHPWEeaMzZlCtb-EfQ" name="background refresh">
+    <include xmi:type="uml:Include" xmi:id="_SGBDkHPXEeaMzZlCtb-EfQ" addition="_y_IrIHPWEeaMzZlCtb-EfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_S_21oHPXEeaMzZlCtb-EfQ" addition="_0CeXcHPWEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_y_IrIHPWEeaMzZlCtb-EfQ" name="send notification"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_0CeXcHPWEeaMzZlCtb-EfQ" name="generate workout schedule">
+    <include xmi:type="uml:Include" xmi:id="_NrmGsHPXEeaMzZlCtb-EfQ" addition="_4tKk8HPWEeaMzZlCtb-EfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_OaBS8HPXEeaMzZlCtb-EfQ" addition="_6YrEgHPWEeaMzZlCtb-EfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_PiMb8HPXEeaMzZlCtb-EfQ" addition="_3n4X4HPWEeaMzZlCtb-EfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_QQz1cHPXEeaMzZlCtb-EfQ" addition="_1xHDgHPWEeaMzZlCtb-EfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_1xHDgHPWEeaMzZlCtb-EfQ" name="access user preferences"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_3n4X4HPWEeaMzZlCtb-EfQ" name="access calendar"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4tKk8HPWEeaMzZlCtb-EfQ" name="access weather information"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_6YrEgHPWEeaMzZlCtb-EfQ" name="get phone location"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="__OsYQHPWEeaMzZlCtb-EfQ" name="phone"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_BXiUEHPXEeaMzZlCtb-EfQ" client="__OsYQHPWEeaMzZlCtb-EfQ" supplier="_xCJaAHPWEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_DN3jkHPXEeaMzZlCtb-EfQ" client="_RgcGwHPWEeaMzZlCtb-EfQ" supplier="_tJUHQHPWEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_EGemkHPXEeaMzZlCtb-EfQ" client="_RgcGwHPWEeaMzZlCtb-EfQ" supplier="_qPrnsHPWEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_TwH08HPXEeaMzZlCtb-EfQ" name="access Yahoo weather API"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VghbkHPXEeaMzZlCtb-EfQ" name="access weather underground API"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XrzAUHPXEeaMzZlCtb-EfQ" name="access goggle calendar api"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Z-Nu4HPXEeaMzZlCtb-EfQ" name="access phone calendar"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_c2qisHPXEeaMzZlCtb-EfQ" client="_3n4X4HPWEeaMzZlCtb-EfQ" supplier="_XrzAUHPXEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_dreq0HPXEeaMzZlCtb-EfQ" client="_3n4X4HPWEeaMzZlCtb-EfQ" supplier="_Z-Nu4HPXEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_e39FAHPXEeaMzZlCtb-EfQ" client="_4tKk8HPWEeaMzZlCtb-EfQ" supplier="_VghbkHPXEeaMzZlCtb-EfQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_fbhFEHPXEeaMzZlCtb-EfQ" client="_4tKk8HPWEeaMzZlCtb-EfQ" supplier="_TwH08HPXEeaMzZlCtb-EfQ"/>
 </uml:Model>
