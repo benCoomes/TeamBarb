@@ -1,0 +1,10 @@
+CPSC 3720 - Submission 1 - September 5 2016
+
+Team Members: Benjamin Coomes, KayLeigh Semeraro, Mary Glenn ("Grace")
+
+Submission Summary:
+
+The folder contains several diagrams beginning to outline the concept for our team's fitness application,
+GetFit, which takes a user's schedule and daily habits and proposes suggested workouts that fit into
+the user's busy day, hopefully helping more people to "find the time" for being active and staying healthy.
+
