@@ -1,0 +1,87 @@
+system requirements requirementList for getfit::getfit
+[
+	requirement R1: "Android Platform"[
+		description "The getfit system shall be accessible through an 
+					application that runs on the android platform"
+					
+		rationale "The cross platform availability of Android is more 
+					attractive to the company than an iOS platform"	
+	]
+	
+	requirement R2: "User Information"[
+		description "The getfit system shall be capable of storing the 
+					following values: user's name, user's google calendar 
+					API key, and user preferences"
+					
+		rationale "It would be very inconvenient for a user to have to 
+					reconnect the application with google calendar at the 
+					start of every session."
+	]
+	
+	requirement R3: "GUI Based Interaction"[
+		description "The getfit system shall enable user interaction through a 
+					graphical interface"
+					
+		rationale "Getfit will be a mobile application and therefore a GUI is a
+					feature expected by the target customer"
+	]
+	
+	requirement R4: "Access Google calendar API"[
+		val maxtime = 5
+		description "apiDAO should be able to access information about the 
+					user's schedule from the google calendar api in less 
+					than" maxtime "seconds"
+					
+		rationale "Getfit will be much more convenient if it uses a schedule 
+				 	that the user has already made. Such a schedule is likely 
+					to exist on google calendar."
+		
+	]
+	
+	requirement R5: "Display Specifications"[
+		description "The system shall be able to display a user-requested 
+					number of days on the screen along with events occurring 
+					during each day"
+					
+		rationale "The application will minimize the amount of unnecessary 
+					information by only displaying the days the user requests 
+					with relevant events"
+	]
+	
+	requirement R6: "Calculate Work Outs"[
+		description "The system shall be able to calculate potential workout 
+					times based on the user's schedule and preferences."
+					
+		rationale "This is the primary convenience provided by the 
+					application."
+	]
+	
+	requirement R7: "Open GUI Fast"[
+		val maxtime = 5
+		description "The application should be able to access the user 
+					interface of the home screen in less than" maxtime 
+					"seconds"
+					
+		rationale "The applications will be more pleasing to use if the user 
+					can navigate the the home screen in a short amount of time"
+	]
+	
+	requirement R8: "Calculation time"[
+		description "The application will be able to load, calculate, and 
+					display the user's calendar within 5 seconds"
+					
+		rationale "The application will be frustrating to use if it takes a
+					 long time to provide useful information"
+	]
+	
+	requirement R9: "Add Events"[
+		description "The getfit system will be able to add events to the user's
+					calendar upon user request"
+	]
+	
+	requirement R10: "Calendar Sync"[
+		val syncTime = 30
+		description "The system shall sync with google calendar every" syncTime
+					"seconds while running, or when the user adds an event"
+	]
+]

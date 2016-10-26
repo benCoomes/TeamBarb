@@ -1,0 +1,77 @@
+-- Template Declarations for getfit system
+package getfit
+public
+	
+	system getfit
+	end getfit;
+	
+	system implementation getfit.impl
+		subcomponents
+			-- declare all of these as systems or devices (or something else?)
+			userData : system userData.impl;
+			calendar : system calendar.impl;
+			timeBlock: system timeBlock.impl;
+			userDAO: system userDAO.impl;
+			apiDAO: system apiDAO.impl;
+			calendarController: system calendarController.impl;
+			workoutScheduler: system workoutScheduler.impl;
+			calendarTranslator: system calendarTranslator.impl;
+			persistentStorage: system persistentStorage.impl;
+			
+	end getfit.impl;
+	
+	system userData
+	end userData;
+	
+	system implementation userData.impl
+	end userData.impl;
+	
+	system calendar
+	end calendar;
+	
+	system implementation calendar.impl
+	end calendar.impl;
+	
+	system timeBlock	
+	end timeBlock;
+	
+	system implementation timeBlock.impl
+	end timeBlock.impl;
+	
+	system userDAO	
+	end userDAO;
+	
+	system implementation userDAO.impl
+	end userDAO.impl;
+	
+	system apiDAO	
+	end apiDAO;
+	
+	system implementation apiDAO.impl
+	end apiDAO.impl;
+	
+	system calendarController	
+	end calendarController;
+	
+	system implementation calendarController.impl
+	end calendarController.impl;
+
+	system workoutScheduler	
+	end workoutScheduler;
+	
+	system implementation workoutScheduler.impl
+	end workoutScheduler.impl;
+	
+	system calendarTranslator	
+	end calendarTranslator;
+	
+	system implementation calendarTranslator.impl
+	end calendarTranslator.impl;
+	
+	system persistentStorage
+	end persistentStorage;
+	
+	system implementation persistentStorage.impl
+	end persistentStorage.impl;
+	
+end getfit;
