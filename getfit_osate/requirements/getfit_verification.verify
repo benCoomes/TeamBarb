@@ -1,0 +1,17 @@
+verification plan getfit_plan for requirementList
+[
+	claim requirementList.R4 [
+		activities
+			maxtime: verifyMethods.returnTrue()
+	]
+	 claim requirementList.R7[
+	 	
+	 ]
+	 claim requirementList.R8[
+	 	
+	 ]
+	 claim requirementList.R10[
+	 	
+	 ]
+	
+]

@@ -1,0 +1,35 @@
+package mvp
+	public
+	
+	system mvp
+	end mvp;
+	
+	system model
+		features
+			-- port to receive events created by the presenter
+			command_port: in event data port;
+	end model;
+	
+	system view
+		features
+			-- port to receive commands from presenter
+			update: in event data port;
+			-- port to notify presenter of user events
+			keyboardEvent: out event data port;
+			mouseEvent: out event data port;
+	end view;
+	
+	system presenter
+		features
+			-- port to send commands model
+			command_port: out event data port;
+			--port to send formatted data to view
+			update: out event data port;
+			-- port to receive notifications of events 
+			keyboardEvent: in event data port;
+			mouseEvent: in event data port;
+			-- port to retrieve data from the model
+			modelData: in event data port;
+	end presenter;
+	
+end mvp;
