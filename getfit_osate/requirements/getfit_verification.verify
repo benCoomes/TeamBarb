@@ -2,16 +2,19 @@ verification plan getfit_plan for requirementList
 [
 	claim requirementList.R4 [
 		activities
-			maxtime: verifyMethods.returnTrue()
+			time_to_API: Plugins.SpeedAnalysis()
 	]
 	 claim requirementList.R7[
-	 	
+	 	activities
+	 		time_to_interface: Plugins.SpeedAnalysis()
 	 ]
 	 claim requirementList.R8[
-	 	
+	 	activities
+	 		calculation_time: Plugins.SpeedAnalysis()
 	 ]
 	 claim requirementList.R10[
-	 	
+	 	activities
+	 		sync_period: Plugins.CycleAnalysis()
 	 ]
 	
 ]

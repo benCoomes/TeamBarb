@@ -1,0 +1,61 @@
+package mvp
+	public
+	
+	system mvp
+	end mvp;
+	
+	system implementation mvp.impl
+		subcomponents
+			model: system mvp::model;
+			view: system mvp::view;
+			presenter: system mvp::presenter;
+			touchscreen: device touchscreen;
+			
+		connections
+			model_command: port presenter.command_port -> model.command_port;
+			model_data: port model.data_port -> presenter.modelData;
+			touchscreen_event: port touchscreen.touchEvent -> view.touchEvent;
+			view_event: port view.user_interaction -> presenter.userInteraction;
+			update_view: port presenter.update -> view.update;
+			update_screen: port view.display_data -> touchscreen.display;
+
+	end mvp.impl;
+	
+	
+	system model
+		features
+			-- port to receive events created by the presenter
+			command_port: in event data port;
+			data_port: out data port;
+	end model;
+	
+	system view
+		features
+			-- port to receive commands from presenter
+			update: in event data port;
+			-- ports to integrate touchscreen
+			touchEvent: in event port;
+			display_data: out data port;
+			--port to send information to presenter
+			user_interaction: out event data port;
+	end view;
+	
+	system presenter
+		features
+			-- port to send commands model
+			command_port: out event data port;
+			--port to send formatted data to view
+			update: out event data port;
+			-- port to receive notifications of events 
+			userInteraction: in event data port;
+			-- port to retrieve data from the model
+			modelData: in data port;
+	end presenter;
+	
+	device touchscreen
+		features
+			touchEvent: out event port;
+			display: in data port;
+	end touchscreen;
+	
+end mvp;
